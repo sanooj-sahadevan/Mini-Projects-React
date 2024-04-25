@@ -1,0 +1,34 @@
+body{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: black;
+}
+
+.color-picker-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1{
+  color: aliceblue;
+  margin: 50px;
+  font-size: 5rem;
+}
+
+.color-display{
+  width: 350px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 10px rgb(51, 5, 106);
+  border: 5px solid hsl(0, 100%, 99%)  ;
+  border-radius: 35px;
+  margin-bottom: 30px;
+
+}label{
+  color: aliceblue;
+  margin-bottom: 10px;
+}
+/* p{
+  color: aliceblue;
+} */

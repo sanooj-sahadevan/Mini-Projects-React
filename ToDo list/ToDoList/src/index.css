@@ -1,0 +1,117 @@
+body {
+  background-color: rgb(0, 0, 0);
+  padding: 0%;
+  margin: 0%;
+}
+
+.todolist {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  margin-top: 100px;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: aliceblue;
+  /* box-shadow: 0 0 0 1px rgb(234, 253, 112);  */
+
+}
+
+button {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5 ease;
+}
+
+.add-button {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 2px solid rgb(255, 255, 255); 
+  /* box-shadow: 0 0 0 2px rgb(234, 253, 112);  */
+}
+
+.add-button:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.delete {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 2px solid rgb(255, 255, 255); 
+  /* box-shadow: 0 0 0 2px rgb(234, 253, 112);  */
+}
+
+.delete:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.movebutton {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 2px solid rgb(255, 255, 255); 
+  /* box-shadow: 0 0 0 2px rgb(234, 253, 112);  */
+
+}
+
+.movebutton:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+input[type = 'text']{
+  font-size: 1.6em;
+  padding: 10px;
+  border: 2px solid hsla(0, 86%, 25%, 0);
+  border-radius: 5px;
+  color: rgb(56, 55, 55);
+  /* box-shadow: 0 0 0 2px rgb(234, 253, 112);  */
+
+
+}
+
+ol{
+  padding: 0;
+}
+li{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 7px;
+  background-color: rgb(35, 34, 39);
+  margin-bottom: 10px;
+  border: 3px solid hsla(0, 5%, 53%, 0);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  text-align: centre;
+  width: 500px;
+  margin-left: 500px;
+}
+.text{
+  flex:1;
+}
+.delete,.movebutton{
+
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+
+}
+
+@media screen and (max-width: 768px) {
+  li {
+    width: 100%;
+    margin-left: 0;
+  }
+}
