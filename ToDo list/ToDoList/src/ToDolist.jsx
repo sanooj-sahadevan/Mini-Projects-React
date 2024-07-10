@@ -15,6 +15,7 @@ function myTodoList() {
     if (newTask.trim() !== "") {
       setTasks((t) => [...t, newTask]);
       setNewTask("");
+      console.log('ohigufyd');
     }
   }
 
@@ -41,6 +42,18 @@ function myTodoList() {
 
   }
 
+const duplicate=((task)=>{
+  
+    setTasks((t) => [...t, task]);
+    setNewTask("");
+  
+ 
+})
+
+
+
+
+
   return (
     <div className="todolist">
       <h1>DO-IT</h1>
@@ -49,7 +62,7 @@ function myTodoList() {
         type="text"
         value={newTask}
         onChange={handleInputChange}
-        placeholder="Add your task..." maxLength="15"
+        placeholder="Add your task..." maxLength="15" id="yep"
       />
       <button className="add-button"  onClick={addTask}>
         Add
@@ -68,6 +81,12 @@ function myTodoList() {
             <button onClick={() => moveTaskUp(index)} className="movebutton">
               Up
             </button>
+            <button onClick={() => duplicate(task)} className="movebutton">
+              Duplicate
+            </button>
+
+
+
           </li>
         ))}
       </ol>
