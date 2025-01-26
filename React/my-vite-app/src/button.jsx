@@ -7,8 +7,12 @@ const button = () => {
 
   const handleClick = (event) => {
     if (state % 2 == 1) {
+      console.log(event);
+      event.target.textContent   = "OUCH"
       event.target.style.backgroundColor = "green";
     }else {
+      event.target.textContent   = "OOOUCH"
+
       event.target.style.backgroundColor = "black";
     }
     setState(state + 1);

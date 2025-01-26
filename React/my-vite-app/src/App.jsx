@@ -3,6 +3,7 @@ import Probs from "./Probs";
 import Condition from "./conditionalRendrind";
 import List from "./list";
 import Button from "./button";
+import Counter from "./Counter";
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       {/* <Probs data={prob} /> */}
       {/* <Condition data={{ condition, prob }} /> */}
       {/* <List /> */}
-      <Button/>
+      {/* <Button/> */}
+      {/* <Counter/> */}
     </>
   );
 }
